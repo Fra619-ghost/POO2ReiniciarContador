@@ -49,6 +49,12 @@ fun Contador(modifier: Modifier = Modifier) {
             Button(onClick = { flag = false }) {
                 Text("Detener")
             }
+            Button(onClick = {
+                flag = false
+                contador = 0
+            }) {
+                Text("Reiniciar")
+            }
         }
     }
 }
