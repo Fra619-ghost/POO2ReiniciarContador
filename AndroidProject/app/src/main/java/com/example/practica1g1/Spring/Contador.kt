@@ -39,15 +39,16 @@ fun Contador(modifier: Modifier = Modifier) {
 
         Spacer(Modifier.height(16.dp))
         Row(
-            horizontalArrangement = Arrangement.SpaceEvenly
-            verticalAligment = Aligment.CenterVerticaly
-        ) { }
-        Button(onClick = { flag = true }) {
-            Text("Incrementar")
-        }
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Button(onClick = { flag = true }) {
+                Text("Incrementar")
+            }
 
-        Button(onClick = { flag = false }) {
-            Text("Detener")
+            Button(onClick = { flag = false }) {
+                Text("Detener")
+            }
         }
     }
 }
